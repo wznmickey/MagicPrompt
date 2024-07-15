@@ -15,7 +15,7 @@ app.config["TEMP_FOLDER"] = "tmp/"
 
 
 def initialize_all():
-    MAIN_INDEX_STEMMED = "Index_stemmed"
+    MAIN_INDEX_STEMMED = "https://github.com/GOK-656/MagicPrompt/raw/main-server/Index_stemmed"
     STOPWORD_PATH = "data/stopwords.txt"
 
     # stopwords
