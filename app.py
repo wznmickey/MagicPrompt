@@ -37,7 +37,7 @@ def initialize_all():
 
 
 def get_results_all(ranker, query, top_n, args=None):
-    DATASET_CSV_PATH = "data/data_with_labels.csv.zip"
+    DATASET_CSV_PATH = "https://github.com/GOK-656/MagicPrompt/raw/main-server/data/data_with_labels.csv.zip"
     results = ranker.query(query)
     docids = [result[0] for result in results]
     df = pd.read_csv(DATASET_CSV_PATH)
@@ -304,9 +304,9 @@ def generate():
     return redirect(url_for("home"))
 
 
-if __name__ == "__main__":
-    # engine = initialize_all()
-    # app.run(host="0.0.0.0", port=8080)
-    app.run()
-    #server = pywsgi.WSGIServer(("0.0.0.0", 8080), app)
-    #server.serve_forever()
+# if __name__ == "__main__":
+#     # engine = initialize_all()
+#     # app.run(host="0.0.0.0", port=8080)
+#     app.run()
+#     #server = pywsgi.WSGIServer(("0.0.0.0", 8080), app)
+#     #server.serve_forever()
