@@ -5,11 +5,9 @@ from ranker import *
 import pandas as pd
 from image2text import *
 from doinstruct_pix2pix import *
-import tempfile
 from prompt_generator import *
 from load_drawingModels import *
 import uuid
-from gevent import pywsgi
 app = Flask(__name__)
 app.config["TEMP_FOLDER"] = "tmp/"
 
